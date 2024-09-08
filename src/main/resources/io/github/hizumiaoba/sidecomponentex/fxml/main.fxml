@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.hizumiaoba.sidecomponentex.MainController">
+   <children>
+      <BorderPane layoutX="213.0" layoutY="167.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="1080.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Operative SideBar Test App">
+                     <font>
+                        <Font name="Meiryo UI" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="640.0" prefWidth="180.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="buttonHomeNavigation" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onHomeButtonClick" prefHeight="30.0" prefWidth="140.0" text="Home" VBox.vgrow="ALWAYS" />
+                  <Button fx:id="buttonPage1Navigation" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onPage1ButtonClick" prefHeight="30.0" prefWidth="140.0" text="Page1" VBox.vgrow="ALWAYS" />
+                  <Button fx:id="buttonPage2Navigation" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onPage2ButtonClick" prefHeight="30.0" prefWidth="140.0" text="Page2" VBox.vgrow="ALWAYS" />
+                  <Button fx:id="buttonPage3Navigation" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onPage3ButtonClick" prefHeight="30.0" prefWidth="140.0" text="Page3" VBox.vgrow="ALWAYS" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <StackPane fx:id="centerPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
